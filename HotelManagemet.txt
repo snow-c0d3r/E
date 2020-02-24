@@ -1,0 +1,39 @@
+Overview:
+This project is aimed at Hotel Booking management System.This is an integrated System that contains 3 components user,hotel Employee,
+Admin.Admin,Hotel Employee and user can  access the system only though login credentials.Each Hotel is associated with a hotel employee.
+This system is robust and is  a optimized version of the existing hotel booking system.Admin  have access to entire details of the system and has
+ability to change any detail of the hotels and rooms.User can browse hotels and book rooms.Hotel Employee allocates room to the user based on booking_id 
+and can disable/enable any room on his/her associated hotel.
+
+
+functionalities of the Hotel employee:
+
+
+1.Allocate room based on booking_id:
+When a user books a room/rooms, booking_id is generated for that transaction.A user must give that booking_id to hotel Employee
+when he/she checks in to the hotel.Then the hotel Employee checks for the available rooms based on booking dates ,type of the room
+which were extracted based on booking_id.From the available rooms,hotel Employee assings a room to user and subsequently 
+the row in booking table gets updated with room_id.
+
+
+
+2.Book a room(Offline):
+A hotel Employee can book a room  in offline  too.He checks the availability of rooms based on the customer's booking dates
+and books rooms/room. A new row gets inserted in the bookings_table  .
+
+ 3.Disable/Enable room
+A hotel Employee can enable or disbale a room ,which gets refelected in the database.So  a person ,booking online also finds  a
+change in the rooms' list.The availibilty column gets updated whenever hotel employee changes the room status.
+
+4.View the Status of rooms:
+Hotel Employee can  view the status of each room in his/her hotel date wise.
+Data is retrieved based from the booking_table and is displayed on the UI page.
+
+5.View Transactions:
+A hotel Employee can view  all the transactions of associated hotel.
+The data  is retrieved from bookings_hotel.
+
+				
+
+
+
